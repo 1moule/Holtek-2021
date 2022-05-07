@@ -1,0 +1,15 @@
+.\bsp_systick.o: ..\HARDWARE\SYSTICK\bsp_systick.c
+.\bsp_systick.o: ..\HARDWARE\SYSTICK\bsp_SysTick.h
+.\bsp_systick.o: ..\User\stm32f10x.h
+.\bsp_systick.o: ..\CORE\core_cm3.h
+.\bsp_systick.o: C:\Keil_v5\ARM\ARMCLANG\include\stdint.h
+.\bsp_systick.o: ..\User\system_stm32f10x.h
+.\bsp_systick.o: ..\User\stm32f10x_conf.h
+.\bsp_systick.o: ..\STM32F10x_FWLIB\inc\stm32f10x_adc.h
+.\bsp_systick.o: ..\User\stm32f10x.h
+.\bsp_systick.o: ..\STM32F10x_FWLIB\inc\stm32f10x_dbgmcu.h
+.\bsp_systick.o: ..\STM32F10x_FWLIB\inc\stm32f10x_gpio.h
+.\bsp_systick.o: ..\STM32F10x_FWLIB\inc\stm32f10x_rcc.h
+.\bsp_systick.o: ..\STM32F10x_FWLIB\inc\stm32f10x_tim.h
+.\bsp_systick.o: ..\STM32F10x_FWLIB\inc\stm32f10x_usart.h
+.\bsp_systick.o: ..\STM32F10x_FWLIB\inc\misc.h

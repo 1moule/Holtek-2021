@@ -1,0 +1,16 @@
+.\bh1750.o: ..\HARDWARE\BH1750\bh1750.c
+.\bh1750.o: ..\HARDWARE\BH1750\bh1750.h
+.\bh1750.o: ..\SYSTEM\sys\sys.h
+.\bh1750.o: ..\User\stm32f10x.h
+.\bh1750.o: ..\CORE\core_cm3.h
+.\bh1750.o: C:\Keil_v5\ARM\ARMCLANG\include\stdint.h
+.\bh1750.o: ..\User\system_stm32f10x.h
+.\bh1750.o: ..\User\stm32f10x_conf.h
+.\bh1750.o: ..\STM32F10x_FWLIB\inc\stm32f10x_adc.h
+.\bh1750.o: ..\User\stm32f10x.h
+.\bh1750.o: ..\STM32F10x_FWLIB\inc\stm32f10x_dbgmcu.h
+.\bh1750.o: ..\STM32F10x_FWLIB\inc\stm32f10x_gpio.h
+.\bh1750.o: ..\STM32F10x_FWLIB\inc\stm32f10x_rcc.h
+.\bh1750.o: ..\STM32F10x_FWLIB\inc\stm32f10x_tim.h
+.\bh1750.o: ..\STM32F10x_FWLIB\inc\stm32f10x_usart.h
+.\bh1750.o: ..\STM32F10x_FWLIB\inc\misc.h
