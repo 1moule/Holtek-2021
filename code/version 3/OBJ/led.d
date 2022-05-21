@@ -1,0 +1,16 @@
+.\led.o: ..\HARDWARE\LED\led.c
+.\led.o: ..\HARDWARE\LED\led.h
+.\led.o: ..\SYSTEM\sys\sys.h
+.\led.o: ..\User\stm32f10x.h
+.\led.o: ..\CORE\core_cm3.h
+.\led.o: C:\Keil_v5\ARM\ARMCLANG\include\stdint.h
+.\led.o: ..\User\system_stm32f10x.h
+.\led.o: ..\User\stm32f10x_conf.h
+.\led.o: ..\STM32F10x_FWLIB\inc\stm32f10x_adc.h
+.\led.o: ..\User\stm32f10x.h
+.\led.o: ..\STM32F10x_FWLIB\inc\stm32f10x_dbgmcu.h
+.\led.o: ..\STM32F10x_FWLIB\inc\stm32f10x_gpio.h
+.\led.o: ..\STM32F10x_FWLIB\inc\stm32f10x_rcc.h
+.\led.o: ..\STM32F10x_FWLIB\inc\stm32f10x_tim.h
+.\led.o: ..\STM32F10x_FWLIB\inc\stm32f10x_usart.h
+.\led.o: ..\STM32F10x_FWLIB\inc\misc.h

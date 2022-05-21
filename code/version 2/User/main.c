@@ -85,6 +85,7 @@ int main(void)
 		if (!i2c_CheckDevice(BH1750_Addr))
 		{
 			Light = LIght_Intensity();        //获取光照强度
+			//Light = 1;
 		}	
 		
 		soil_moisture=Get_Adc_Average(4,1000);

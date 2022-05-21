@@ -2498,37 +2498,37 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       316         34          0          8          0       1965   adc.o
-       642         42          0          0          0       7390   bh1750.o
-        90          0          0          0          0       2096   common.o
+       316         34          0          8          0       2005   adc.o
+       642         42          0          0          0       7554   bh1750.o
+        90          0          0          0          0       2140   common.o
          0          0          0          0          0       4532   core_cm3.o
-       428          0          0          0          0       4352   datapointtools.o
-       220         26          0          4          0       1627   delay.o
-       372         28          0          0          0       2941   dht11.o
-        28          4          0          4          0       1110   dma1.o
-       896        312          0          5         19      20227   gizwits_product.o
-      6792       2210          0         16        372      19542   gizwits_protocol.o
-        60          6          0          0          0        471   led.o
-       584         76          0         24         40      11487   main.o
-       172         22          0          0          0     256557   misc.o
-      1336        102       2072          0          0      10278   oled.o
-       176          6          0          0          0        719   pwm.o
-       438          0          0          0          0       5664   ringbuffer.o
+       428          0          0          0          0       4420   datapointtools.o
+       220         26          0          4          0       1671   delay.o
+       372         28          0          0          0       3005   dht11.o
+        28          4          0          4          0       1146   dma1.o
+       896        312          0          5         19      20335   gizwits_product.o
+      6792       2210          0         16        372      19830   gizwits_protocol.o
+        60          6          0          0          0        479   led.o
+       584         76          0         24         40      11583   main.o
+       172         22          0          0          0     256669   misc.o
+      1336        102       2072          0          0      10478   oled.o
+       176          6          0          0          0        731   pwm.o
+       438          0          0          0          0       5740   ringbuffer.o
         64         26        236          0       1536        808   startup_stm32f10x_md.o
-       486         24          0          0          0       8450   stm32f10x_adc.o
-        72         18          0          0          0       1080   stm32f10x_dma.o
-       448          6          0          0          0       4482   stm32f10x_gpio.o
-        26          0          0          0          0       3658   stm32f10x_it.o
-       364         50          0         20          0       6067   stm32f10x_rcc.o
-       768         72          0          0          0       7795   stm32f10x_tim.o
-       598         28          0          0          0       6696   stm32f10x_usart.o
-       328         28          0         20          0       2177   system_stm32f10x.o
-       128         12          0          0          0       1086   timer.o
-       336         28          0          6        200       4100   usart.o
-       216         16          0          0          0       1174   usart3.o
+       486         24          0          0          0       8578   stm32f10x_adc.o
+        72         18          0          0          0       1104   stm32f10x_dma.o
+       448          6          0          0          0       4546   stm32f10x_gpio.o
+        26          0          0          0          0       3758   stm32f10x_it.o
+       364         50          0         20          0       6143   stm32f10x_rcc.o
+       768         72          0          0          0       7947   stm32f10x_tim.o
+       598         28          0          0          0       6800   stm32f10x_usart.o
+       328         28          0         20          0       2221   system_stm32f10x.o
+       128         12          0          0          0       1106   timer.o
+       336         28          0          6        200       4164   usart.o
+       216         16          0          0          0       1194   usart3.o
 
     ----------------------------------------------------------------------
-     16422       3176       2340        112       2168     398531   Object Totals
+     16422       3176       2340        112       2168     400687   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         38          0          0          5          1          0   (incl. Padding)
 
@@ -2606,8 +2606,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     19598       3326       2398        112       2264     391643   Grand Totals
-     19598       3326       2398        112       2264     391643   ELF Image Totals
+     19598       3326       2398        112       2264     393799   Grand Totals
+     19598       3326       2398        112       2264     393799   ELF Image Totals
      19598       3326       2398        112          0          0   ROM Totals
 
 ==============================================================================

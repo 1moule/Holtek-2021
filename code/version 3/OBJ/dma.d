@@ -1,0 +1,17 @@
+.\dma.o: ..\HARDWARE\DMA\dma.c
+.\dma.o: ..\HARDWARE\DMA\dma.h
+.\dma.o: ..\SYSTEM\sys\sys.h
+.\dma.o: ..\User\stm32f10x.h
+.\dma.o: ..\CORE\core_cm3.h
+.\dma.o: C:\Keil_v5\ARM\ARMCLANG\include\stdint.h
+.\dma.o: ..\User\system_stm32f10x.h
+.\dma.o: ..\User\stm32f10x_conf.h
+.\dma.o: ..\STM32F10x_FWLIB\inc\stm32f10x_adc.h
+.\dma.o: ..\User\stm32f10x.h
+.\dma.o: ..\STM32F10x_FWLIB\inc\stm32f10x_dbgmcu.h
+.\dma.o: ..\STM32F10x_FWLIB\inc\stm32f10x_gpio.h
+.\dma.o: ..\STM32F10x_FWLIB\inc\stm32f10x_rcc.h
+.\dma.o: ..\STM32F10x_FWLIB\inc\stm32f10x_tim.h
+.\dma.o: ..\STM32F10x_FWLIB\inc\stm32f10x_usart.h
+.\dma.o: ..\STM32F10x_FWLIB\inc\misc.h
+.\dma.o: ..\STM32F10x_FWLIB\inc\stm32f10x_dma.h

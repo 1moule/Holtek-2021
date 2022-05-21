@@ -1,0 +1,14 @@
+.\tim2.o: ..\HARDWARE\TIM2\TIM2.c
+.\tim2.o: ..\User\stm32f10x.h
+.\tim2.o: ..\CORE\core_cm3.h
+.\tim2.o: C:\Keil_v5\ARM\ARMCLANG\include\stdint.h
+.\tim2.o: ..\User\system_stm32f10x.h
+.\tim2.o: ..\User\stm32f10x_conf.h
+.\tim2.o: ..\STM32F10x_FWLIB\inc\stm32f10x_adc.h
+.\tim2.o: ..\User\stm32f10x.h
+.\tim2.o: ..\STM32F10x_FWLIB\inc\stm32f10x_dbgmcu.h
+.\tim2.o: ..\STM32F10x_FWLIB\inc\stm32f10x_gpio.h
+.\tim2.o: ..\STM32F10x_FWLIB\inc\stm32f10x_rcc.h
+.\tim2.o: ..\STM32F10x_FWLIB\inc\stm32f10x_tim.h
+.\tim2.o: ..\STM32F10x_FWLIB\inc\stm32f10x_usart.h
+.\tim2.o: ..\STM32F10x_FWLIB\inc\misc.h
