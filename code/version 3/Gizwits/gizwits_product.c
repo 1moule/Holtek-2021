@@ -33,6 +33,9 @@ dataPoint_t currentDataPoint;
 extern u8 wifi_sta;
 extern DHT11_Data_TypeDef DHT11_Data;
 extern float Light;
+extern bool water_manual;
+extern bool windows_manual;
+extern bool light_manual;
 
 //extern TIM_HandleTypeDef htim2;
 //extern UART_HandleTypeDef huart1;
@@ -90,14 +93,14 @@ int8_t gizwitsEventProcess(eventInfo_t *info, uint8_t *gizdata, uint32_t len)
         {
           //user handle 这里调用自己写的led函数
 				  GPIO_SetBits(GPIOA,GPIO_Pin_3);						 //PC13 输出高
-				  //symbol_light = LIGHT_ON;
-
+					light_manual = !light_manual;
+						
         }
         else
         {
           //user handle  
 					GPIO_ResetBits(GPIOA,GPIO_Pin_3);						 //PC13 输出低
-					//symbol_light = LIGHT_OFF;
+					light_manual = !light_manual;
 
         }
         break;
@@ -107,12 +110,14 @@ int8_t gizwitsEventProcess(eventInfo_t *info, uint8_t *gizdata, uint32_t len)
         if(0x01 == currentDataPoint.valuewater)
         {
 					TIM_SetCompare3(TIM2,150);   //PA2;//设置比较值        开水
+					water_manual=!water_manual;
           //user handle
         }
         else
         {
 					TIM_SetCompare3(TIM2,199);   //PA2);//设置比较值			关水
           //user handle    
+					water_manual=!water_manual;
         }
         break;
 
@@ -127,6 +132,8 @@ int8_t gizwitsEventProcess(eventInfo_t *info, uint8_t *gizdata, uint32_t len)
 					//delay_ms(200);
 					TIM_SetCompare2(TIM2,180);//设置比较值   拉上窗
           //user handle
+					
+					windows_manual=!windows_manual;
         }
         else
         {
@@ -135,6 +142,7 @@ int8_t gizwitsEventProcess(eventInfo_t *info, uint8_t *gizdata, uint32_t len)
 					//delay_ms(200);
 					TIM_SetCompare2(TIM2,190);//设置比较值   拉开窗
           //user handle    
+					windows_manual=!windows_manual;
         }
         break;
 
@@ -341,7 +349,7 @@ void mcuRestart(void)
 //}
 
 /**
-* @brief Serial port write operation, send data to WiFi module //串口写操作，向WiFi模块发送数据,应该就是把传感器数据发送到8266还有命令它配网，
+* @brief Serial port write operation, send data to WiFi module //串口写操作，向WiFi模块发送数据,把传感器数据发送到8266还有命令它配网
 *
 * @param buf      : buf address
 * @param len      : buf length

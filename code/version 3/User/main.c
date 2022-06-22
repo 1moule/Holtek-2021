@@ -5,6 +5,9 @@ DHT11_Data_TypeDef DHT11_Data;//定义温湿度传感器结构体
 extern dataPoint_t currentDataPoint;
 float Light = 0;
 int soil_moisture = 0;
+bool water_manual = false;
+bool windows_manual = false;
+bool light_manual = false;
 
 int i=0;
 typedef long(*ArrayPointer)[10];
@@ -102,39 +105,53 @@ int main(void)
 			//light
  		  if(Light<50)//过暗
 			{
+				
+				if(light_manual==false){
 				GPIO_SetBits(GPIOA,GPIO_Pin_3);	//开灯
-				currentDataPoint.valueLight = 1; 		
+				currentDataPoint.valueLight = 1; 	
+				}
+				
+				if(windows_manual==false){
 				TIM_SetCompare2(TIM2,190);//设置比较值   窗户拉开
 				currentDataPoint.valuewindows = 0;
+				}
 			}
 		
 			if(Light>=50&&Light<200)//适宜
 			{
+				if(light_manual==false){
 				TIM_SetCompare2(TIM2,190);//设置比较值   窗拉开
-				currentDataPoint.valuewindows = 0;				
+				currentDataPoint.valuewindows = 0;	
+				}
+				if(windows_manual==false){
 				GPIO_ResetBits(GPIOA,GPIO_Pin_3);//关灯
 				currentDataPoint.valueLight = 0;
+				}
 			}
 			
 			if(Light>=200)//过晒
 			{
+				if(light_manual==false){
 				TIM_SetCompare2(TIM2,180);//设置比较值   窗户拉上
 				currentDataPoint.valuewindows = 1;
+				}
+				if(windows_manual==false){
 				GPIO_ResetBits(GPIOA,GPIO_Pin_3);//关灯
 				currentDataPoint.valueLight = 0;
+				}
 			}
 		
 			i=0;
 		}
 		
 		  //soil
-			if(soil_moisture<35)
+			if(soil_moisture<35&&water_manual==false)
 			{
 				TIM_SetCompare3(TIM2,0);  //PA2
 				currentDataPoint.valuewater=1;
 			}
 		
-			if(soil_moisture>=35)
+			if(soil_moisture>=35&&water_manual==false)
 			{
 				TIM_SetCompare3(TIM2,199);   //PA2
 				currentDataPoint.valuewater=0;
