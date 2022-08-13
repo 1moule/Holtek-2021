@@ -114,18 +114,22 @@ void OLED_WR_Byte(unsigned dat,unsigned cmd)
 /***********************Delay****************************************/
 void Delay_50ms(unsigned int Del_50ms)
 {
-	unsigned int m;
-	for(;Del_50ms>0;Del_50ms--)
-		for(m=6245;m>0;m--);
+
+	delay_ms(50);
+
 }
 
 void Delay_1ms(unsigned int Del_1ms)
 {
-	unsigned char j;
-	while(Del_1ms--)
-	{	
-		for(j=0;j<123;j++);
-	}
+//	unsigned char j;
+//	while(Del_1ms--)
+//	{	
+//		for(j=0;j<123;j++);
+//	}
+	
+
+	delay_ms(1);
+
 }
 
 //坐标设置
@@ -214,7 +218,10 @@ u32 oled_pow(u8 m,u8 n)
 void OLED_ShowNumber(u8 x,u8 y,u32 num,u8 len,u8 size2)
 {         	
 	u8 t,temp;
-	u8 enshow=0;						   
+	u8 enshow=0;
+
+
+	
 	for(t=0;t<len;t++)
 	{
 		temp=(num/oled_pow(10,len-t-1))%10;
@@ -229,16 +236,22 @@ void OLED_ShowNumber(u8 x,u8 y,u32 num,u8 len,u8 size2)
 		}
 	 	OLED_ShowChar(x+(size2/2)*t,y,temp+'0',size2); 
 	}
+	
+
+	
 } 
 //显示一个字符号串
 void OLED_ShowString(u8 x,u8 y,u8 *chr,u8 Char_Size)
 {
+	
+
 	while (*chr!='\0')
 	{		OLED_ShowChar(x,y,*chr,Char_Size);
 			x+=8;
 		if(x>120){x=0;y+=2;}
 			chr++;
 	}
+
 }
 void OLED_Float(unsigned char Y,unsigned char X,double real,unsigned char N) 
 {
@@ -323,7 +336,7 @@ void OLED_Num2(unsigned char x,unsigned char y, int number)
 {
 	unsigned char shi,ge;
 	int num =number;
-	
+
 	if(num<0)
 	{ 
 		num=-num;
@@ -341,13 +354,15 @@ void OLED_Num2(unsigned char x,unsigned char y, int number)
     OLED_Num_write(x+1,y,shi);
     OLED_Num_write(x+2,y,ge); 
   }
-        
+
 }
 
 void OLED_Num3(unsigned char x,unsigned char y,int number)
 {
   unsigned char ge,shi,bai;
 	int num =number;
+	
+
 	if(num<0)
 	{
 		num=-num;
@@ -369,6 +384,7 @@ void OLED_Num3(unsigned char x,unsigned char y,int number)
 		OLED_Num_write(x+2,y,shi);
 		OLED_Num_write(x+1,y,bai);
   }
+
 }
 
 void OLED_Num4(unsigned char x,unsigned char y, int number)
@@ -446,7 +462,7 @@ void OLED_Init(void)
 // 	GPIO_Init(GPIOB, &GPIO_InitStructure);	  //初始化GPIOB8,9
 // 	GPIO_SetBits(GPIOB,GPIO_Pin_8|GPIO_Pin_9);	
 
-	delay_ms(800);
+	delay_ms(400);
 	OLED_WR_Byte(0xAE,OLED_CMD);//--display off
 	OLED_WR_Byte(0x00,OLED_CMD);//---set low column address
 	OLED_WR_Byte(0x10,OLED_CMD);//---set high column address
@@ -474,6 +490,7 @@ void OLED_Init(void)
 	OLED_WR_Byte(0x8D,OLED_CMD);//set charge pump enable
 	OLED_WR_Byte(0x14,OLED_CMD);//
 	OLED_WR_Byte(0xAF,OLED_CMD);//--turn on oled panel
+
 }  
 
 /**************************************************************************

@@ -2,7 +2,7 @@
 .\stm32f10x_crc.o: ..\STM32F10x_FWLIB\inc\stm32f10x_crc.h
 .\stm32f10x_crc.o: ..\User\stm32f10x.h
 .\stm32f10x_crc.o: ..\CORE\core_cm3.h
-.\stm32f10x_crc.o: C:\Keil_v5\ARM\ARMCLANG\include\stdint.h
+.\stm32f10x_crc.o: D:\k5\ARM\ARMCC\Bin\..\include\stdint.h
 .\stm32f10x_crc.o: ..\User\system_stm32f10x.h
 .\stm32f10x_crc.o: ..\User\stm32f10x_conf.h
 .\stm32f10x_crc.o: ..\STM32F10x_FWLIB\inc\stm32f10x_adc.h

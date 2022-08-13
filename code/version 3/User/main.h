@@ -22,6 +22,8 @@
 
 #include "bh1750.h"
 #include "adc.h"
-
+#include "los_sys.h"
+#include "los_task.ph"
+#include "los_memory.ph"
 
 #endif

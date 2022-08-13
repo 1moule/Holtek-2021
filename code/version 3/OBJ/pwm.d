@@ -2,7 +2,7 @@
 .\pwm.o: ..\HARDWARE\PWM\pwm.h
 .\pwm.o: ..\User\stm32f10x.h
 .\pwm.o: ..\CORE\core_cm3.h
-.\pwm.o: C:\Keil_v5\ARM\ARMCLANG\include\stdint.h
+.\pwm.o: D:\k5\ARM\ARMCC\Bin\..\include\stdint.h
 .\pwm.o: ..\User\system_stm32f10x.h
 .\pwm.o: ..\User\stm32f10x_conf.h
 .\pwm.o: ..\STM32F10x_FWLIB\inc\stm32f10x_adc.h

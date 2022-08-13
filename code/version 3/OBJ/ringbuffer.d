@@ -1,9 +1,9 @@
 .\ringbuffer.o: ..\Utils\ringbuffer.c
 .\ringbuffer.o: ..\Utils\ringBuffer.h
-.\ringbuffer.o: C:\Keil_v5\ARM\ARMCLANG\include\stdint.h
-.\ringbuffer.o: C:\Keil_v5\ARM\ARMCLANG\include\stdio.h
-.\ringbuffer.o: C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h
-.\ringbuffer.o: C:\Keil_v5\ARM\ARMCLANG\include\string.h
+.\ringbuffer.o: D:\k5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ringbuffer.o: D:\k5\ARM\ARMCC\Bin\..\include\stdio.h
+.\ringbuffer.o: D:\k5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\ringbuffer.o: D:\k5\ARM\ARMCC\Bin\..\include\string.h
 .\ringbuffer.o: ..\Utils\common.h
-.\ringbuffer.o: C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h
-.\ringbuffer.o: C:\Keil_v5\ARM\ARMCLANG\include\ctype.h
+.\ringbuffer.o: D:\k5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\ringbuffer.o: D:\k5\ARM\ARMCC\Bin\..\include\ctype.h

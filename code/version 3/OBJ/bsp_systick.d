@@ -2,7 +2,7 @@
 .\bsp_systick.o: ..\HARDWARE\SYSTICK\bsp_SysTick.h
 .\bsp_systick.o: ..\User\stm32f10x.h
 .\bsp_systick.o: ..\CORE\core_cm3.h
-.\bsp_systick.o: C:\Keil_v5\ARM\ARMCLANG\include\stdint.h
+.\bsp_systick.o: D:\k5\ARM\ARMCC\Bin\..\include\stdint.h
 .\bsp_systick.o: ..\User\system_stm32f10x.h
 .\bsp_systick.o: ..\User\stm32f10x_conf.h
 .\bsp_systick.o: ..\STM32F10x_FWLIB\inc\stm32f10x_adc.h

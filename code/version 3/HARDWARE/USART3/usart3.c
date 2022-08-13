@@ -68,8 +68,8 @@ void usart3_init(u32 bound)
 	
 	//设置中断优先级
 	NVIC_InitStructure.NVIC_IRQChannel = USART3_IRQn;
-	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=3 ;//抢占优先级3
-	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 4;		//子优先级3
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=6 ;//抢占优先级3
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;		//子优先级3
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;			//IRQ通道使能
 	NVIC_Init(&NVIC_InitStructure);	//根据指定的参数初始化VIC寄存器
 	

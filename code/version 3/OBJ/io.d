@@ -1,7 +1,7 @@
 .\io.o: ..\HARDWARE\IO\IO.c
 .\io.o: ..\User\stm32f10x.h
 .\io.o: ..\CORE\core_cm3.h
-.\io.o: C:\Keil_v5\ARM\ARMCLANG\include\stdint.h
+.\io.o: D:\k5\ARM\ARMCC\Bin\..\include\stdint.h
 .\io.o: ..\User\system_stm32f10x.h
 .\io.o: ..\User\stm32f10x_conf.h
 .\io.o: ..\STM32F10x_FWLIB\inc\stm32f10x_adc.h

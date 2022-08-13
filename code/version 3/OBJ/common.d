@@ -1,8 +1,8 @@
 .\common.o: ..\Utils\common.c
 .\common.o: ..\Utils\common.h
-.\common.o: C:\Keil_v5\ARM\ARMCLANG\include\stdint.h
-.\common.o: C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h
-.\common.o: C:\Keil_v5\ARM\ARMCLANG\include\stdio.h
-.\common.o: C:\Keil_v5\ARM\ARMCLANG\include\string.h
-.\common.o: C:\Keil_v5\ARM\ARMCLANG\include\ctype.h
-.\common.o: C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h
+.\common.o: D:\k5\ARM\ARMCC\Bin\..\include\stdint.h
+.\common.o: D:\k5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\common.o: D:\k5\ARM\ARMCC\Bin\..\include\stdio.h
+.\common.o: D:\k5\ARM\ARMCC\Bin\..\include\string.h
+.\common.o: D:\k5\ARM\ARMCC\Bin\..\include\ctype.h
+.\common.o: D:\k5\ARM\ARMCC\Bin\..\include\stdlib.h

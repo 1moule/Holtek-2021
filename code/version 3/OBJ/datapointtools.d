@@ -1,9 +1,9 @@
 .\datapointtools.o: ..\Utils\dataPointTools.c
 .\datapointtools.o: ..\Utils\dataPointTools.h
-.\datapointtools.o: C:\Keil_v5\ARM\ARMCLANG\include\stdint.h
-.\datapointtools.o: C:\Keil_v5\ARM\ARMCLANG\include\stdio.h
-.\datapointtools.o: C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h
-.\datapointtools.o: C:\Keil_v5\ARM\ARMCLANG\include\string.h
+.\datapointtools.o: D:\k5\ARM\ARMCC\Bin\..\include\stdint.h
+.\datapointtools.o: D:\k5\ARM\ARMCC\Bin\..\include\stdio.h
+.\datapointtools.o: D:\k5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\datapointtools.o: D:\k5\ARM\ARMCC\Bin\..\include\string.h
 .\datapointtools.o: ..\Utils\common.h
-.\datapointtools.o: C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h
-.\datapointtools.o: C:\Keil_v5\ARM\ARMCLANG\include\ctype.h
+.\datapointtools.o: D:\k5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\datapointtools.o: D:\k5\ARM\ARMCC\Bin\..\include\ctype.h

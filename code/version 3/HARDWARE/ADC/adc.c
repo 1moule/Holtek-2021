@@ -55,11 +55,11 @@ u16  Get_Adc(u8 ch)  //获取ADC数据
 	return ADC_GetConversionValue(ADC1);
 }
 
-u16 Get_Adc_Average(u8 ch,u8 times)  //获取土壤湿度数据并返回给主函数
+u16 Get_Adc_Average(u16 ch,u16 times)  //获取土壤湿度数据并返回给主函数
 {
 
 	u32 temp_val=0;
-	u8 t;
+	u16 t;
 	for(t=0;t<times;t++)
 	{
 		temp_val+=Get_Adc(ch);

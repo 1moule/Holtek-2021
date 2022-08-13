@@ -1,9 +1,9 @@
 .\gizwits_protocol.o: ..\Gizwits\gizwits_protocol.c
 .\gizwits_protocol.o: ..\Utils\ringBuffer.h
-.\gizwits_protocol.o: C:\Keil_v5\ARM\ARMCLANG\include\stdint.h
-.\gizwits_protocol.o: C:\Keil_v5\ARM\ARMCLANG\include\stdio.h
-.\gizwits_protocol.o: C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h
-.\gizwits_protocol.o: C:\Keil_v5\ARM\ARMCLANG\include\string.h
+.\gizwits_protocol.o: D:\k5\ARM\ARMCC\Bin\..\include\stdint.h
+.\gizwits_protocol.o: D:\k5\ARM\ARMCC\Bin\..\include\stdio.h
+.\gizwits_protocol.o: D:\k5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\gizwits_protocol.o: D:\k5\ARM\ARMCC\Bin\..\include\string.h
 .\gizwits_protocol.o: ..\Gizwits\gizwits_product.h
 .\gizwits_protocol.o: ..\User\stm32f10x.h
 .\gizwits_protocol.o: ..\CORE\core_cm3.h
@@ -18,7 +18,7 @@
 .\gizwits_protocol.o: ..\STM32F10x_FWLIB\inc\stm32f10x_usart.h
 .\gizwits_protocol.o: ..\STM32F10x_FWLIB\inc\misc.h
 .\gizwits_protocol.o: ..\Gizwits\gizwits_protocol.h
-.\gizwits_protocol.o: C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h
+.\gizwits_protocol.o: D:\k5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\gizwits_protocol.o: ..\Utils\common.h
-.\gizwits_protocol.o: C:\Keil_v5\ARM\ARMCLANG\include\ctype.h
+.\gizwits_protocol.o: D:\k5\ARM\ARMCC\Bin\..\include\ctype.h
 .\gizwits_protocol.o: ..\Utils\dataPointTools.h

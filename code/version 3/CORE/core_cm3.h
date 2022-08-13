@@ -1042,6 +1042,26 @@ static __INLINE void __set_CONTROL(uint32_t control)
   __regControl = control;
 }
 
+
+
+/**
+  \brief   Get IPSR Register
+  \details Returns the content of the IPSR Register.
+  \return               IPSR Register value
+ */
+static __INLINE uint32_t __get_IPSR(void)
+{
+  register uint32_t __regIPSR          __ASM("ipsr");
+  return(__regIPSR);
+	
+//	MRS R0,IPSR
+//	  BX LR
+}
+
+
+
+
+
 #endif /* __ARMCC_VERSION  */ 
 
 

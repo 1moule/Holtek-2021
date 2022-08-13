@@ -10,7 +10,7 @@
       <TargetName>Target 1</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
+      <pCCUsed>5060960::V5.06 update 7 (build 960)::.\ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_MD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\User;..\CORE;C:\Keil_v5\ARM\ARMCLANG\include;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\HARDWARE\KEY;..\HARDWARE\LED;..\HARDWARE\TIMER;..\HARDWARE\USART3;..\Utils;..\Gizwits;..\HARDWARE\DHT11;..\HARDWARE\PWM;..\HARDWARE\OLED;..\HARDWARE\SYSTICK;..\HARDWARE\BH1750;..\HARDWARE\ADC;..\HARDWARE\DMA;..\HARDWARE\RCC;..\HARDWARE\IO;..\HARDWARE\WS2812B;..\HARDWARE\TIM2;..\STM32F10x_FWLIB\inc</IncludePath>
+              <IncludePath>..\User;..\CORE;C:\Keil_v5\ARM\ARMCLANG\include;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\HARDWARE\KEY;..\HARDWARE\LED;..\HARDWARE\TIMER;..\HARDWARE\USART3;..\Utils;..\Gizwits;..\HARDWARE\DHT11;..\HARDWARE\PWM;..\HARDWARE\OLED;..\HARDWARE\SYSTICK;..\HARDWARE\BH1750;..\HARDWARE\ADC;..\HARDWARE\DMA;..\HARDWARE\RCC;..\HARDWARE\IO;..\HARDWARE\WS2812B;..\HARDWARE\TIM2;..\STM32F10x_FWLIB\inc;..\Middlewares\LiteOS\arch\arm\arm-m\include;..\Middlewares\LiteOS\kernel\include;..\Middlewares\LiteOS\kernel\base\include;..\Middlewares\LiteOS\kernel\extended\include;..\OS_CONFIG</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -666,6 +666,141 @@
               <FileName>ringbuffer.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Utils\ringbuffer.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>kernel</GroupName>
+          <Files>
+            <File>
+              <FileName>los_init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\kernel\los_init.c</FilePath>
+            </File>
+            <File>
+              <FileName>los_priqueue.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\kernel\base\core\los_priqueue.c</FilePath>
+            </File>
+            <File>
+              <FileName>los_swtmr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\kernel\base\core\los_swtmr.c</FilePath>
+            </File>
+            <File>
+              <FileName>los_sys.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\kernel\base\core\los_sys.c</FilePath>
+            </File>
+            <File>
+              <FileName>los_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\kernel\base\core\los_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>los_tick.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\kernel\base\core\los_tick.c</FilePath>
+            </File>
+            <File>
+              <FileName>los_timeslice.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\kernel\base\core\los_timeslice.c</FilePath>
+            </File>
+            <File>
+              <FileName>los_event.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\kernel\base\ipc\los_event.c</FilePath>
+            </File>
+            <File>
+              <FileName>los_mux.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\kernel\base\ipc\los_mux.c</FilePath>
+            </File>
+            <File>
+              <FileName>los_queue.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\kernel\base\ipc\los_queue.c</FilePath>
+            </File>
+            <File>
+              <FileName>los_sem.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\kernel\base\ipc\los_sem.c</FilePath>
+            </File>
+            <File>
+              <FileName>los_heap.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\kernel\base\mem\bestfit_little\los_heap.c</FilePath>
+            </File>
+            <File>
+              <FileName>los_memory.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\kernel\base\mem\bestfit_little\los_memory.c</FilePath>
+            </File>
+            <File>
+              <FileName>los_memcheck.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\kernel\base\mem\common\los_memcheck.c</FilePath>
+            </File>
+            <File>
+              <FileName>los_memstat.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\kernel\base\mem\common\los_memstat.c</FilePath>
+            </File>
+            <File>
+              <FileName>los_slab.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\kernel\base\mem\common\los_slab.c</FilePath>
+            </File>
+            <File>
+              <FileName>los_slabmem.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\kernel\base\mem\common\los_slabmem.c</FilePath>
+            </File>
+            <File>
+              <FileName>los_membox.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\kernel\base\mem\membox\los_membox.c</FilePath>
+            </File>
+            <File>
+              <FileName>los_misc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\kernel\base\misc\los_misc.c</FilePath>
+            </File>
+            <File>
+              <FileName>los_err.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\kernel\base\om\los_err.c</FilePath>
+            </File>
+            <File>
+              <FileName>los_tickless.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\kernel\extended\tickless\los_tickless.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>arch</GroupName>
+          <Files>
+            <File>
+              <FileName>los_dispatch_keil.S</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\Middlewares\LiteOS\arch\arm\arm-m\cortex-m3\keil\los_dispatch_keil.S</FilePath>
+            </File>
+            <File>
+              <FileName>los_hw.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\arch\arm\arm-m\src\los_hw.c</FilePath>
+            </File>
+            <File>
+              <FileName>los_hw_tick.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\arch\arm\arm-m\src\los_hw_tick.c</FilePath>
+            </File>
+            <File>
+              <FileName>los_hwi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\LiteOS\arch\arm\arm-m\src\los_hwi.c</FilePath>
             </File>
           </Files>
         </Group>
